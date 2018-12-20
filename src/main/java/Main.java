@@ -201,8 +201,8 @@ public class Main extends PApplet {
             for (Figure actualFigure : figuresSorted) {
                 System.out.println(actualFigure.toString());
             }
-            DrawingFigure drawingFigure = new DrawingFigure(figuresSorted);
-            drawingFigure.draw();
+            //DrawingFigure drawingFigure = new DrawingFigure(figuresSorted);
+            //drawingFigure.draw();
         }
         else{
             System.out.printf("Sie haben noch keine Einträge erstellt.%n");

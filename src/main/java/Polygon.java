@@ -16,12 +16,13 @@ public class Polygon extends Figure {
 
         for (int i = 0; i < vertices.size(); i++) {
             if(i == vertices.size() - 1){
-                area += Math.abs((vertices.get(i)[placeX] * vertices.get(0)[placeY]) - (vertices.get(i)[placeY] * vertices.get(0)[placeX]));
+                area += (vertices.get(i)[placeX] * vertices.get(0)[placeY]) - (vertices.get(i)[placeY] * vertices.get(0)[placeX]);
             }
             else{
-                area += Math.abs((vertices.get(i)[placeX] * vertices.get(i + 1)[placeY]) - (vertices.get(i)[placeY] * vertices.get(i + 1)[placeX]));
+                area += (vertices.get(i)[placeX] * vertices.get(i + 1)[placeY]) - (vertices.get(i)[placeY] * vertices.get(i + 1)[placeX]);
             }
         }
+        Math.abs(area);
         area /= 2;
         return area;
     }
