@@ -1,6 +1,4 @@
-import processing.core.PApplet;
-
-public abstract  class Figure extends PApplet {
+public abstract  class Figure{
 
     public abstract double area();
     public abstract double circumference();
