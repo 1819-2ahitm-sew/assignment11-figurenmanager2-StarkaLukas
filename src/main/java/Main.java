@@ -283,7 +283,6 @@ public class Main extends PApplet {
             }else if(figure instanceof Rectangle){
                 fill(0, 255, 0);
                 rect(((Rectangle) figure).getCoordinates()[placeX],((Rectangle) figure).getCoordinates()[placeY], (float) ((Rectangle) figure).getLength(),(float) ((Rectangle) figure).getWidth());
-                System.out.println();
             }else if(figure instanceof Square){
                 fill(0, 0, 255);
                 rect(((Square) figure).getCoordinates()[placeX], ((Square) figure).getCoordinates()[placeY], (float) ((Square) figure).getLength(),(float) ((Square) figure).getLength());
